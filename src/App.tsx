@@ -1,13 +1,19 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { Timer } from './components';
-
 import { registerRootComponent } from 'expo';
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+
+import { Timer } from './components';
+import { TimerActions } from './sections';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Timer time={100}/>
+      <Timer time={100} />
+      <TimerActions
+        onPlayCallback={() => { }}
+        onPauseCallback={() => { }}
+        onStopCallback={() => { }}
+        isPlaying={true} />
       <View style={styles.test}>
       </View>
     </View>
