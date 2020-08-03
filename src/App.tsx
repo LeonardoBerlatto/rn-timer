@@ -1,12 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { Timer } from './components';
+
+import { registerRootComponent } from 'expo';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Hello World!</Text>
-      <StatusBar style="auto" />
+      <Timer time={100}/>
+      <View style={styles.test}>
+      </View>
     </View>
   );
 }
@@ -14,13 +17,16 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    color: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
     backgroundColor: '#00001f',
+    justifyContent: 'space-between'
   },
-  text : {
-    color: '#fff',
-    fontSize: 18
+  test: {
+    borderWidth: 2,
+    width: '100%',
+    flex: 1,
+    borderColor: 'red'
   }
 });
+
+registerRootComponent(App)
