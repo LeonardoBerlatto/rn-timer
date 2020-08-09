@@ -6,9 +6,10 @@ export default StyleSheet.create({
         justifyContent: 'space-around',
         alignItems: 'center',
         width: '100%',
-        height: '10%',
-        borderColor: 'red',
-        borderWidth: 2,
+        height: '12%',
+        borderColor: '#3423ca',
+        borderBottomWidth:2,
+        borderTopWidth:2,
         paddingVertical: 10,
     },
     actionButton: {
