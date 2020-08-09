@@ -1,4 +1,4 @@
-import { StyleSheet, Dimensions } from 'react-native';
+import { Dimensions, StyleSheet } from 'react-native';
 
 const { height } = Dimensions.get('window')
 
@@ -9,8 +9,8 @@ export default StyleSheet.create({
         fontSize: 60
     },
     progressBar: {
-        width: height/3,
-        height: height/3,
+        width: height / 3,
+        height: height / 3,
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 1000,

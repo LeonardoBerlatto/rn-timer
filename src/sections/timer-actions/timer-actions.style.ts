@@ -9,7 +9,6 @@ export default StyleSheet.create({
         height: '12%',
         borderColor: '#3423ca',
         borderBottomWidth:2,
-        borderTopWidth:2,
         paddingVertical: 10,
     },
     actionButton: {

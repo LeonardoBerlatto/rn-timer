@@ -4,10 +4,12 @@ import { StyleSheet, View } from 'react-native';
 
 import { Timer } from './components';
 import { TimerActions } from './sections';
+import { Entry, TimerEntryList } from './sections/timer-entry-list/timer-entry-list';
 
 export default function App() {
   const [timeInSeconds, setTimeInSeconds] = useState(0)
   const [isPlaying, setIsPlaying] = useState(false);
+  const [entries, setEntries] = useState([] as Entry[]);
 
   useEffect(() => {
     let interval = 0;
@@ -26,6 +28,10 @@ export default function App() {
   }
 
   const stop = () => {
+    setEntries([
+      ...entries,
+      { timeInSeconds }
+    ])
     setTimeInSeconds(0);
     setIsPlaying(false);
   }
@@ -39,8 +45,7 @@ export default function App() {
         onPauseCallback={pause}
         onStopCallback={stop}
         isPlaying={isPlaying} />
-      <View style={styles.test}>
-      </View>
+      <TimerEntryList entries={entries} />
     </View>
   );
 }
