@@ -21,7 +21,7 @@ export const TimerEntryList = ({ entries }: TimerEntryListProps) => {
     }
 
     return (
-        <ScrollView style={styles.test}>
+        <ScrollView style={styles.container}>
             {renderEntryList()}
         </ScrollView>
     );
