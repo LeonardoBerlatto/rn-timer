@@ -1,6 +1,6 @@
 # :watch: rn-timer
 
-Project used to learn the basics of React Native with [Expo]()
+Project used to learn the basics of React Native with [Expo](https://expo.io/)
 
 ## ▶ Running the project 
 1. Install dependencies
