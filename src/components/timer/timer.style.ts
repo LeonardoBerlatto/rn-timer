@@ -1,11 +1,13 @@
 import { Dimensions, StyleSheet } from 'react-native';
 
+import { DEFAULT_TEXT_COLOR, PRIMARY_COLOR } from '../../styles/color-pallete';
+
 const { height } = Dimensions.get('window')
 
 
 export default StyleSheet.create({
     timerText: {
-        color: '#fff',
+        color: DEFAULT_TEXT_COLOR,
         fontSize: 60
     },
     progressBar: {
@@ -14,7 +16,7 @@ export default StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 1000,
-        borderColor: '#4630eb',
+        borderColor: PRIMARY_COLOR,
         borderWidth: 30,
         marginVertical: 20
     }

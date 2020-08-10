@@ -1,1 +1,1 @@
-# rn-counter
+# rn-timer

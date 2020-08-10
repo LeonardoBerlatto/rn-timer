@@ -1,5 +1,7 @@
 import { StyleSheet } from 'react-native';
 
+import { PRIMARY_COLOR } from '../../styles/color-pallete';
+
 export default StyleSheet.create({
     container: {
         flexDirection: 'row',
@@ -16,7 +18,7 @@ export default StyleSheet.create({
         paddingVertical: 10,
         paddingHorizontal: 15,
         fontSize: 18,
-        backgroundColor: '#4630eb',
+        backgroundColor: PRIMARY_COLOR,
     },
     actionButtonText: {
         color: 'white',
